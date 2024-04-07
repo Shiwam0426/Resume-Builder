@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-Builder</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <%- include("./navbar.ejs") %>
+        <div class="card flex flex-col items-center my-10  w-96 mx-auto min-h-96 shadow-lg rounded-xl">
+            <div class="wrap flex flex-col items-center border-2 border-black px-5 py-3 rounded-md mb-1">
+                <div class="Greetings text-xl font-bold">
+                    <h1>Welcome To Resume-Builder</h1>
+                </div>
+                <form action="/create-resume" method="post" enctype="multipart/form-data">
+                    <div class="input flex flex-col  ">
+                        <input type="text" name="name" placeholder="Enter Your Name"
+                            class="name my-5  rounded-lg text-center">
+                        <input type="tel" name="phone" placeholder="Enter Your Phone"
+                            class="my-5 rounded-lg text-center"> <!-- Added input for phone -->
+                        <input type="email" name="email" placeholder="Enter your Email"
+                            class="my-5 rounded-lg text-center">
+                        <input type="file" name="file" class="my-2">
+                    </div>
+                    
+                    <div class="btn my-10 border-2 border-black rounded-xl text-center">
+                        <button type="submit">Create Your Resume</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>

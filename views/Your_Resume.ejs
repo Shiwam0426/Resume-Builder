@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-builder</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="heading flex flex-col items-center justify-center">
+            <div class="name text-xl font-bold text-blue-300 text-center"><%=name%></div>
+            <div class="privacy ">
+                <p class="text-center" >Phone:<%=phone%></p>
+                <p class="text-center">Email:<%=email%></p>
+            </div>
+        </div>
+            <hr class="my-5 border-b-2 border-black">
+            <div class="image my-8">
+                <img src="resume.jpg" alt="Resume Image">
+            </div>
+            <hr class="my-5 border-b-2 border-black">
+            <div class="skills">
+                <div class="head text-xl font-bold">
+                    <h1>Skills:</h1>
+                </div>
+                <ul class="mx-14">
+                    <li>C++</li>
+                    <li>JAVA</li>s
+                    <li>DSA</li>
+                    <li>WEB-D</li>
+                </ul>
+            </div>
+            <hr class="my-5 border-b-2 border-black">
+            <div class="projects text-xl font-bold">
+                Projects:
+            </div>
+            <div class="projects mx-14">
+                <p>1.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ducimus cupiditate pariatur, quibusdam laborum animi reprehenderit sunt velit totam fugiat.</p>
+                <p>2.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, aut tempora! Veniam vel repellat blanditiis suscipit delectus quas nostrum! Fugiat!</p>
+            </div>
+    </div>
+</body>
+</html>
